@@ -24,6 +24,7 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     text-shadow: 6px 6px 8px wheat;
+    margin-bottom: 40px;
 }
 
 p {
@@ -46,8 +47,9 @@ p {
 
 #rules {
     background-color: #FCD6C8;
-    font-size: large;
-    text-align: center;
+    font-size: 15px;
+    /* text-align: center; */
+    height: 2000px;
 }
 
 .icon {
@@ -69,9 +71,16 @@ p {
 }
 
 .fond {
-    background-color: #F5B59E;
+    background-image: url("../img/fond2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
+}
+
+h2 {
+    font-size: medium;
+    font-weight: bold;
 }
 
 
@@ -92,8 +101,35 @@ p {
     opacity: 0;
 }
 
-#btnRecommencer {
+#btnRecommencer,
+.ouvrirInfo,
+.fermerInfo {
     margin: 20px 20px;
+    background-color: #FCD6C8;
+    padding: 10px;
+}
+
+button {
+    border: 1px solid black;
+}
+
+.ouvrirInfo,
+.fermerInfo {
+    float: right;
+    margin-bottom: 40px;
+}
+
+.ouvrirInfo {
+    display: none;
+}
+
+.regleResponsive {
+    display: none;
+    height: 2000px;
+    width: 100%;
+    background-color: #FCD6C8;
+    text-align: center;
+    padding: 70px;
 }
 
 @media screen and (max-width: 992px) {
@@ -102,12 +138,6 @@ p {
     }
     .colonne1 {
         text-align: center;
-    }
-    #info {
-        opacity: 1;
-    }
-    .contenuDiv {
-        visibility: hidden;
     }
     #reposeCarteJ,
     #reposeCarteO {
@@ -128,16 +158,14 @@ p {
     }
     #rules {
         margin-bottom: 20px;
+        display: none;
+    }
+    .ouvrirInfo {
+        display: block;
     }
 }
 
 @media screen and (max-width: 500px) {
-    #info {
-        opacity: 1;
-    }
-    .contenuDiv {
-        visibility: hidden;
-    }
     #reposeCarteJ,
     #reposeCarteO {
         width: 100px;

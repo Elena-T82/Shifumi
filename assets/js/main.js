@@ -7,7 +7,7 @@ $(document).ready(function() {
 
         $(".fond").hide("slide", {
             direction: "up"
-        }, 500, function() {
+        }, 1200, function() {
             $(".contenu").show("slide");
             nombreflocons = 0;
 
@@ -15,38 +15,16 @@ $(document).ready(function() {
         });
     });
 
-    $("#info").click(function() {
+    $(".ouvrirInfo").click(function() {
 
-        if ($(this).text() == "Info") {
-            $("#col3").css("height", "100%");
-            $(".contenuDiv").css("visibility", "visible");
-            $(this).text("X");
-        } else {
-            $("#col3").css("height", "100px");
-            $(".contenuDiv").css("visibility", "hidden");
-            $(this).text("Info");
-        }
+        $(".regleResponsive").css("display", "block");
+
     })
 
+    $(".fermerInfo").click(function() {
 
-    // remettre en place les règles du jeu en responsive
+        $(".regleResponsive").css("display", "none");
 
-    function myFunction(x) {
-        if (x.matches) { // If media query matches
-            $("#col3").css("height", "100px");
-            $(".contenuDiv").css("visibility", "hidden");
-
-        } else {
-            $("#col3").css("height", "100%");
-            $(".contenuDiv").css("visibility", "visible");
-
-
-        }
-    }
-
-    var x = window.matchMedia("(max-width: 992px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes
-
+    })
 
 });

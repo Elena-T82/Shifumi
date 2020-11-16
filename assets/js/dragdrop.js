@@ -82,29 +82,35 @@ $(document).ready(function() {
             if (typeLogoOrdi == "feuille") {
 
                 scoreOrdi++;
+                $("#iconOrdi").effect("bounce");
 
             } else if (typeLogoOrdi == "ciseaux") {
 
+                $("#iconJoueur").effect("bounce");
                 scoreJoueur++;
 
             }
         } else if (typeLogoJoueur == "feuille") {
             if (typeLogoOrdi == "pierre") {
 
+                $("#iconJoueur").effect("bounce");
                 scoreJoueur++;
 
             } else if (typeLogoOrdi == "ciseaux") {
 
+                $("#iconOrdi").effect("bounce");
                 scoreOrdi++;
 
             }
         } else if (typeLogoJoueur == "ciseaux") {
             if (typeLogoOrdi == "pierre") {
 
+                $("#iconOrdi").effect("bounce");
                 scoreOrdi++;
 
             } else if (typeLogoOrdi == "feuille") {
 
+                $("#iconJoueur").effect("bounce");
                 scoreJoueur++;
 
             }
@@ -117,6 +123,9 @@ $(document).ready(function() {
 
         $("#PourcentJ").text(pourcentJoueur);
         $("#PourcentO").text(pourcentOrdi);
+
+        // if (scoreJoueur == 1)
+        //     nombreflocons = 12;
 
 
         $("#scoreJ").text(scoreJoueur);
