@@ -1,9 +1,158 @@
-
 * {
     margin: 0%;
     padding: 0%;
 }
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
 
+/* -------------------- Style joh --------------------- */
 
+body {
+    background-image: url("../img/fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-shadow: 6px 6px 8px wheat;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cadre,
+.cadre img {
+    width: 200px;
+    height: 200px;
+    z-index: 10;
+}
+
+.colonne2 {
+    margin-top: 10px;
+}
+
+
+/*Colonne droite*/
+
+#rules {
+    background-color: #FCD6C8;
+    font-size: large;
+    text-align: center;
+}
+
+.icon {
+    width: 180px;
+    height: 180px;
+}
+
+.nomJoueur {
+    width: 180px;
+}
+
+
+/* -------------------- Style patricia ----------------- */
+
+.btnJouez {
+    width: 50%;
+    height: 100px;
+    background-color: #FCD6C8;
+}
+
+.fond {
+    background-color: #F5B59E;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------------- Style Eléna ------------------- */
+
+.imageTombante img {
+    height: 50px;
+}
+
+#reposeCarteJ,
+#reposeCarteO {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#info {
+    opacity: 0;
+}
+
+#btnRecommencer {
+    margin: 20px 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .colonne1 div {
+        display: inline;
+    }
+    .colonne1 {
+        text-align: center;
+    }
+    #info {
+        opacity: 1;
+    }
+    .contenuDiv {
+        visibility: hidden;
+    }
+    #reposeCarteJ,
+    #reposeCarteO {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    .icon {
+        width: 110px;
+        height: 110px;
+    }
+    .cadre,
+    .cadre img {
+        width: 120px;
+        height: 120px;
+        z-index: 10;
+    }
+    #rules {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #info {
+        opacity: 1;
+    }
+    .contenuDiv {
+        visibility: hidden;
+    }
+    #reposeCarteJ,
+    #reposeCarteO {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+    .icon {
+        width: 90px;
+        height: 90px;
+    }
+    .cadre,
+    .cadre img {
+        width: 100px;
+        height: 100px;
+        z-index: 10;
+    }
+}
