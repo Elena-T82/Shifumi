@@ -24,7 +24,7 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     text-shadow: 6px 6px 8px wheat;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -104,7 +104,7 @@ h2 {
 #btnRecommencer,
 .ouvrirInfo,
 .fermerInfo {
-    margin: 20px 20px;
+    /* margin-bottom: 5px; */
     background-color: #FCD6C8;
     padding: 10px;
 }
