@@ -124,9 +124,6 @@ $(document).ready(function() {
         $("#PourcentJ").text(pourcentJoueur);
         $("#PourcentO").text(pourcentOrdi);
 
-        if (scoreJoueur == 1) {
-            nombreflocons == 12;
-        }
 
         $("#scoreJ").text(scoreJoueur);
         $("#scoreO").text(scoreOrdi);

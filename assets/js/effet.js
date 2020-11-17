@@ -2,7 +2,7 @@
    var urlflocon = ["assets/img/leaf.png", "assets/img/ciseauxnew.png", "assets/img/stone.png"];
    var random = Math.floor(Math.random() * urlflocon.length);
    // Ecrire le nombre de flocons :
-   var nombreflocons = 12;
+   var nombreflocons = 0;
    // Indiquer si la neige doit disparaÃ®tre aprÃ¨s x secondes (0=jamais) :
    var cacherflocons = 0;
    // Indiquer si la neige doit Ãªtre vue sur la fenÃªtre ou toute la page avant de disparaÃ®tre ("windowheight"=la fenÃªtre, "pageheight"=toute la page)
