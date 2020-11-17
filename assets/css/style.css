@@ -132,6 +132,12 @@ button {
 
 .imageTombante img {
     height: 50px;
+    z-index: 50;
+}
+
+.imageTombante {
+    height: 50px;
+    z-index: 49;
 }
 
 #reposeCarteJ,
