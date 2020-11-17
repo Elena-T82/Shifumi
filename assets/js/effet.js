@@ -1,5 +1,5 @@
    // Indiquer l'URL de l'image du flocon :
-   var urlflocon = ["Assets/img/leaf.png", "Assets/img/ciseauxnew.png", "Assets/img/stone.png"];
+   var urlflocon = ["assets/img/leaf.png", "assets/img/ciseauxnew.png", "assets/img/stone.png"];
    var random = Math.floor(Math.random() * urlflocon.length);
    // Ecrire le nombre de flocons :
    var nombreflocons = 12;
