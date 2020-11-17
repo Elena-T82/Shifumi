@@ -29,13 +29,19 @@ $(document).ready(function() {
 
     $(".ouvrirInfo").click(function() {
 
-        $(".regleResponsive").css("display", "block");
-
+        // $(".regleResponsive").css("display", "block");
+        $(".regleResponsive").show("slide", {
+                direction: "right"
+            },
+            500);
     })
 
     $(".fermerInfo").click(function() {
 
-        $(".regleResponsive").css("display", "none");
+        $(".regleResponsive").hide("slide", {
+                direction: "right"
+            },
+            500);
 
     })
 
