@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    $("#btnPlay").click(function() {
+
+        if ($(this).text() == "Play song") {
+            document.getElementById('player').play()
+            $(this).text("Stop");
+        } else if ($(this).text() == "Stop") {
+            document.getElementById('player').pause()
+            $(this).text("Play song");
+        }
+    })
+
+
     $(".contenu").hide();
 
     $(".btnJouez").click(function() {
@@ -8,7 +20,7 @@ $(document).ready(function() {
         $(".fond").hide("slide", {
             direction: "up"
         }, 1200, function() {
-            $(".contenu").show("slide");
+            $(".contenu").show("slide", 1000);
             nombreflocons = 0;
 
             $(".imageTombante").remove();

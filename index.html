@@ -10,30 +10,44 @@
     <link rel href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+
     <title>Shifumi</title>
 </head>
 
 <body>
     <!-- ------- DIV accueil --------- -->
+    <audio id="player" src="Assets/sounds/music_fond.mp3"></audio>
 
 
-    <div class="container-fluid fond">
+    <div class="container-fluid p-0 fond">
         <div class="row pt-5">
             <div class="col-12 text-center">
-                <h1> Le Jeu du Shifumi</h1>
+                <h1>{ Le Jeu du Shifumi }</h1>
+                <button type="button" id="btnPlay">Play song</button>
             </div>
         </div>
         <div class="row mt-3 d-flex justify-content-center ">
-            <div class="col-lg-7 col-12 text-center">
+            <div class="col-lg-7 col-12 px-5 text-center">
                 <h2> D'où vient le jeu ?</h2>
 
-                <p class="mt-5">Les origines du jeu sont très lointaines puisque c'est en Asie qu'on retrouve les premiers joueurs.Les seigneurs de la dynastie Han (206 av.JC)ont été les précursseurs.Très populaire au Japon à partir du 16ième siècle, il fut largement
-                    diffusé en Occident au 19 ième siècle au moment de l'essor des échanges commerciaux.(faire un lien ?)</p>
+                <p class="mt-3">Les origines du jeu sont très lointaines puisque c'est en Asie qu'on retrouve les premiers joueurs.Les seigneurs de la dynastie Han (206 av.JC)ont été les précursseurs.Très populaire au Japon à partir du 16ième siècle, il fut largement
+                    diffusé en Occident au 19 ième siècle au moment de l'essor des échanges commerciaux.</p>
             </div>
         </div>
         <div class="row mt-3 d-flex justify-content-center ">
             <div class="col-10 text-center">
                 <button type="button" class="btnJouez">Jouez ! </button>
+            </div>
+        </div>
+        <div class=" row footer text-center pt-2 m-0">
+            <div class="col-4">
+                <p>Mentions générales</p>
+            </div>
+            <div class="col-4">
+                <p>Conditions d'utilisations</p>
+            </div>
+            <div class="col-4">
+                <p>Contactez-nous !</p>
             </div>
         </div>
     </div>
@@ -45,18 +59,18 @@
     <div class="regleResponsive">
         <button type="button" class="fermerInfo">X</button>
 
-        <h1>Les règles du jeu</h1>
-        <h2>Des principes identiques "comme en vrai":</h2>
+        <h2>{ Les règles du jeu }</h2>
+        <h3>Des principes identiques "comme en vrai":</h3>
         <p>La pierre est représentée par <img src="assets/img/ministone.png"></p>
         <p>La feuille est représentée par <img src="assets/img/minileaf.png"></p>
         <p>Les ciseaux sont représentés par <img src="assets/img/miniciseauxnew.png"></p>
 
-        <h2>Force de chaque élément:</h2>
+        <h3>Force de chaque élément:</h3>
         <p>La pierre écrase les ciseaux et gagne.</p>
         <p>La feuille envelope la pierre et gagne.</p>
         <p>Les ciseaux découpent la feuille et gagnent.</p>
 
-        <h2>Le déroulement du jeu:</h2>
+        <h3>Le déroulement du jeu:</h3>
         <p>C'est un duel contre l'ordinanteur. Le joueur met une carte dans la zone de jeu. L'ordinateur met une carte de façon aléatoire, il ne sait pas tricher pas d'inquiétude! Le gagnant est déterminé en fonction du barème des forces déterminés ci-dessus.
         </p>
     </div>
@@ -66,7 +80,7 @@
             <div class="col-lg-9">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="display-2 text-center">Shi Fu Mi</h1>
+                        <h1 class="display-2 text-center">{ Shi Fu Mi }</h1>
                         <button type="button" class="ouvrirInfo">Les règles</button>
                     </div>
                 </div>
@@ -113,18 +127,18 @@
 
             <!--Colonne droite / règles du jeu-->
             <div class="col-lg-3 col-12 order-lg-3 order-1" id="rules">
-                <h1> Les règles du jeu</h1>
-                <h2>Des principes identiques "comme en vrai":</h2>
+                <h2 class="text-center">{ Les règles du jeu }</h2>
+                <h3>Des principes identiques <br> "comme en vrai":</h3>
                 <p>La pierre est représentée par <img src="assets/img/ministone.png"></p>
                 <p>La feuille est représentée par <img src="assets/img/minileaf.png"></p>
                 <p>Les ciseaux sont représentés par <img src="assets/img/miniciseauxnew.png"></p>
 
-                <h2>Force de chaque élément:</h2>
+                <h3>Force de chaque élément:</h3>
                 <p>La pierre écrase les ciseaux et gagne.</p>
                 <p>La feuille envelope la pierre et gagne.</p>
                 <p>Les ciseaux découpent la feuille et gagnent.</p>
 
-                <h2>Le déroulement du jeu:</h2>
+                <h3>Le déroulement du jeu:</h3>
                 <p>C'est un duel contre l'ordinateur. Le joueur met une carte dans la zone de jeu. L'ordinateur met une carte de façon aléatoire, il ne sait pas tricher pas d'inquiétude! Le gagnant est déterminé en fonction du barème des forces déterminés
                     ci-dessus.
                 </p>
@@ -140,7 +154,7 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/dragdrop.js"></script>
-    <!-- <script src="assets/js/effet.js"></script> -->
+    <script src="assets/js/effet.js"></script>
 
 </body>
 

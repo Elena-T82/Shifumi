@@ -3,12 +3,68 @@
     padding: 0%;
 }
 
+@font-face {
+    font-family: "Avocado_creamy";
+    src: url("../fonts/avocado_creamy/Avocado\ Creamy.otf");
+    src: url("../fonts/avocado_creamy/Avocado\ Creamy.ttf");
+}
+
+@font-face {
+    font-family: "Chicken_pie";
+    src: url("../fonts/chicken_pie/CHICKEN\ Pie.otf");
+    src: url("../fonts/chicken_pie/CHICKEN\ Pie.ttf");
+}
+
+@font-face {
+    font-family: "pink_chicken";
+    src: url("../fonts/pink_chicken/PinkChicken-Regular.ttf");
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+button {
+    background-color: #FCD6C8;
+    border-radius: 20px;
+}
+
+#btnPlay {
+    float: right;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Avocado_creamy" !important;
+}
+
+p {
+    font-family: "pink_chicken" !important;
+    font-size: 20px;
+}
+
+h1 {
+    color: black;
+    text-shadow: 6px 6px 8px wheat;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 
@@ -18,17 +74,6 @@ body {
     background-image: url("../img/fond.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    text-shadow: 6px 6px 8px wheat;
-    margin-bottom: 20px;
-}
-
-p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cadre,
@@ -48,7 +93,6 @@ p {
 #rules {
     background-color: #FCD6C8;
     font-size: 15px;
-    /* text-align: center; */
     height: 2000px;
 }
 
@@ -59,6 +103,10 @@ p {
 
 .nomJoueur {
     width: 180px;
+}
+
+button {
+    font-family: "Chicken_pie";
 }
 
 
@@ -75,12 +123,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
-}
-
-h2 {
-    font-size: 16px;
-    font-weight: bold;
+    min-height: 100%;
+    position: relative;
 }
 
 
@@ -132,6 +176,15 @@ button {
     padding: 70px;
 }
 
+.footer {
+    background-color: #0A5674;
+    height: 40px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
 @media screen and (max-width: 992px) {
     .colonne1 div {
         display: inline;
@@ -173,6 +226,9 @@ button {
         background-color: white;
         margin-bottom: 20px;
     }
+    .btnJouez {
+        height: 70px;
+    }
     .icon {
         width: 80px;
         height: 80px;
@@ -196,7 +252,11 @@ button {
         font-size: 25px !important;
     }
     h2 {
-        font-size: 14px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        font-size: 15px;
     }
     .nomJoueur {
         width: 150px;
